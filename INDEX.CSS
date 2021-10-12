@@ -1,0 +1,111 @@
+{
+    margin: 10;
+    text-align: center;
+    
+
+}
+body {
+
+    background:linear-gradient(RED YELLOW);
+
+}
+
+    image{
+        width: auto;
+    }
+
+table {
+    width: 100%;
+    margin-top: 30px;
+}
+img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+
+#header {
+    background-color:forestgreen;
+    height: 150px;
+}
+h1 {
+    color: blue
+    
+    text-align: center;
+}
+#brand {
+
+  width: 40%;
+  float: CENTER;
+  line-height: 70px;
+  height: 70px;
+  text-align: center;
+}
+H2{
+    text-align: center;
+}
+#menu {
+    background-color:forestgreen;
+  width: 60%;
+  float: center;
+  line-height: 70px;
+  height: 70px;
+
+  text-align:center;
+}
+
+a {
+    color: red
+    margin-right: 30px;
+    text-decoration: none;
+
+}
+
+#title {
+    background-color:forestgreen;
+    margin-top: 35px;
+   
+
+}
+   
+#pizza {
+    background-color:forestgreen;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+#DP {
+  background: linear-gradient(45deg,darkred,black);
+  color: white;
+  width: 500px;
+  padding: 15px;
+  border-radius: 50%;
+  margin:20px auto;
+  text-align: center;
+ 
+}
+#TB {
+    background: linear-gradient(45deg,darkred,black);
+  color: white;
+  width: 500px;
+  padding: 15px;
+  border-radius: 50%;
+  margin:20px auto;
+  text-align: center;
+  
+}
+#TD{ background: linear-gradient(45deg,darkred,black);
+    color: white;
+    width: 500px;
+    padding: 15px;
+    border-radius: 50%;
+    margin:20px auto;
+    text-align: center;
+   
+}
+#footer {
+    background: black;
+    padding: 50px;
+    color: cornsilk;
+    margin-top: 50px;
+    text-align: center;
+} 
