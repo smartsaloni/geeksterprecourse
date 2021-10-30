@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Sign In</title>
+	    <style>
+	        body 
+            {
+	            background-image: url("architecture\ background\ asnmnt4.jpg");
+                background-size: cover;
+	            background-repeat: no-repeat;
+	            background-size: cover;
+	            height: auto;
+	            width: auto;
+	        }
+	        a
+             {
+	            text-decoration: none;
+	            font-weight: bold;
+	        }
+	        a:hover
+             {
+	            color:red;
+	        }
+	        #box {
+	            background:goldenrod;
+	            color:blue;
+	            width: 400px;
+	            height: 800px;
+	            margin: 200px 200px 200px 200px;
+	            padding-top: 20px;
+	            box-shadow: 5px 5px 5px purple;
+	        }
+	        input {
+	            color: cyan;
+	            margin-bottom: 20px;
+	            margin-top: 20px;
+	            height: 3px;
+	            box-shadow: 5px 5px 8px yellowgreen;
+	            text-align: center;
+	            margin-left: 120px;
+	        }
+	        input::placeholder
+            {
+	            color:black;
+	        }
+	        #box label
+             {
+	            font-weight:bolder;
+	            margin-top: auto;
+	            margin-left: 50px;
+	        }
+	        #box h2
+             {
+	            margin-left: 100px;
+	            width: 400px;
+	            margin-bottom: 50px;
+	            font-size: 50px;
+	        }
+	        #button
+             {
+	            background-color:purple;
+	            color:black;
+	            box-shadow: 5px 5px 8px black;
+	            margin: 5px;
+                box-sizing:;
+	        }
+	        #button:hover
+             {
+	            background-color:black;
+	            color: crimson;
+	            transform:translate(2px);
+	        }
+	    </style>
+	</head>
+	<body>
+	    <div id="box">
+	        <h2>Sign-up</h2>
+	        <form>
+	            <label type="name">Username</label>
+	            <br>
+            </br>
+	            <input type="name" placeholder="Username" required minlength="4" pattern="a-Z" />
+	            <br>
+            </br>
+	            <label type="Contact">Contact</label>
+	            <br>
+	            <input type="text" placeholder="Contact" required maxlength="14" pattern="0-9"/>
+	            <br>
+            </br>
+
+	            <label type="email">Email</label>
+	            <br>
+	            <input type="email" placeholder="Email"required pattern="+@gmail.com" />
+	            <br>
+	
+            </br>
+	            <label type="Password">Create your Password</label>
+	            <br>
+	            <input type="password" placeholder="Password"  required minlength="4" />
+	            <br>
+            </br>
+	            <label type="Password">Confirm your Password</label>
+	            <br>
+        </br>
+	            <input type="password" placeholder="Password" required  required minlength="4" />
+	            <br>
+	            <input id="button" type="Reset" placeholder= Reset  style="margin-left: 150px;"/>
+	            <input id="button" type="Submit" placeholder=Submit />
+                <br>
+                </br>
+            <form>
+            <h4 style="margin-left: 150px;">new account?</h4>
+	            <a href="index.html" style="margin-left: 200px;" target="_blank">Login?</a>
+            </form>
+	    </div>
+	</body>
+	
+
+	</html>

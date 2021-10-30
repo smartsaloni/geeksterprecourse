@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/sign-up.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Sign In</title>
+	    <style>
+	        body 
+            {
+	            background-image: url("architecture\ background\ asnmnt4.jpg");
+                background-size: cover;
+	            background-repeat: no-repeat;
+	            background-size: cover;
+	            height: auto;
+	            width: auto;
+	        }
+	        a
+             {
+	            text-decoration: none;
+	            font-weight: bold;
+	        }
+	        a:hover
+             {
+	            color:red;
+	        }
+	        #box {
+	            background:goldenrod;
+	            color:blue;
+	            width: 400px;
+	            height: 800px;
+	            margin: 100px 500px 100px 500px ;
+	            padding-top: 50px;
+				padding-left: 40px;
+				padding-right: 40px;
+				padding-bottom: 40px;
+	            box-shadow: 5px 5px 5px purple;
+	        }
+	        input {
+	            color:black;
+	            margin-bottom: 20px;
+	            margin-top: 20px;
+	            height: 3px;
+	            box-shadow: 5px 5px 8px purple;
+	            text-align: center;
+	            margin-left: 200px;
+	        }
+	        input::placeholder
+            {
+	            color:black;
+	        }
+	        #box label
+             {
+	            font-weight:bolder;
+	            margin-top: auto;
+	            margin-left: 50px;
+	        }
+	        #box h2
+             {
+	            margin-left:100px;
+	            width: 400px;
+	            margin-bottom: 50px;
+	            font-size: 50px;
+	        }
+	        #button
+             {
+	            background-color:snow;
+	            color:wheat;
+	            box-shadow: 5px 8px 5px black;
+	            margin: 8px;
+                
+	        }
+	        #button:hover
+             {
+	            background-color:black;
+	            color: crimson;
+	            transform:translate(20px);
+	        }
+	    </style>
+	</head>
+	<body>
+	    <div id="box">
+	        <h2>Sign-up</h2>
+	        <form>
+	            <label type="name">Username</label>
+	            <br>
+            <br>
+	            <input type="name" placeholder="Username" required="" minlength="4" pattern="a-Z">
+	            <br>
+            <br>
+	            <label type="Contact">Contact</label>
+	            <br>
+	            <input type="text" placeholder="Contact" required="" maxlength="14" pattern="0-9">
+	            <br>
+            <br>
+
+	            <label type="email">Email</label>
+	            <br>
+	            <input type="email" placeholder="Email" required="" pattern="+@gmail.com">
+	            <br>
+	
+            <br>
+	            <label type="Password">Create your Password</label>
+	            <br>
+	            <input type="password" placeholder="Password" required="" minlength="4">
+	            <br>
+            <br>
+	            <label type="Password">Confirm your Password</label>
+	            <br>
+        <br>
+	            <input type="password" placeholder="Password" required="" minlength="4">
+	            <br>
+	            <input id="button" type="Reset" style="margin-left: 150px;">
+	            <input id="button" type="Submit">
+                <br>
+                <br>
+            
+            <h4 style="margin-left: 190px;">new account?</h4>
+	            <a href="http://127.0.0.1:5500/index.html" style="margin-left: 200px;" target="_blank">Login?</a>
+            </form>
+	    </div>
+	<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+	
+</body></html>

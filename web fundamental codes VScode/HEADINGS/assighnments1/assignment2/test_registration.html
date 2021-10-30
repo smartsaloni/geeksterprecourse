@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://127.0.0.1:5500/assignment2/test%20registration.html?male=m# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_registration</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .main {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+
+        background-image: linear-gradient(
+            rgba(37, 13, 31, 0.3),
+            rgba(13, 57, 63, 0.425)
+          ),
+          url("registration-background.jpg") ;  
+          background-repeat: no-repeat;
+        background-size:auto;
+        padding-top: 5%;
+        scroll-behavior:smooth;
+      }
+      .signup {
+        background-color:cyan;
+        background: rgb(30, 30, 39);
+        width: 20%;
+        text-align: center;
+        color: cornsilk;
+        margin: 8% 8% 8% 40%;
+        padding: 50px 0px 50px 0px;
+        border: violet 3px dashed;
+        box-shadow: 20px 20px 20px blueviolet; 
+      }
+      #username,
+      #Contact,
+      #selector,
+      #username,
+      #create,
+      #confirm {
+        margin: 20px;
+      }
+      h1 {
+        margin: 20px;
+        color: burlywood;
+        text-shadow: 6px 6px 3px brown;
+        font-size: 20px;
+      }
+      h3 {
+        margin: 15px;
+      }
+      input {
+        border-radius: 8px;
+        background-color: skyblue;
+        box-shadow: 2px 2px 1px black;
+        border: black 2px solid;
+        color: snow;
+      }
+      select,
+      input::placeholder {
+        color: black;
+      }
+      label {
+        font-weight: bold;
+        margin: 20px;
+        box-shadow: 5px 10px 20px green;
+      }
+      select {
+        border-radius: 10px;
+      }
+
+      #Button {
+        padding: 10px 20px;
+        color: purple;
+        font-weight: bold;
+        margin: 20px;
+      }
+      #Button:hover {
+        transform: translate(10px);
+        background-color: PINK;
+        color: yellowgreen;
+      }
+      a:hover {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="signup">
+        <h1>Register</h1>
+        <form>
+          <label>Full Name</label>
+          <input id="first name" type="text" placeholder="Type your name" required="" minlength="2">
+          <br>
+          <br>
+          <label>CONTACT</label>
+          <input id="Number" type="Type" placeholder="Type your contact no." required="" maxlength="12">
+          <br><br>
+          <label>Gender</label>
+          <input id="feMale" type="radio" name="male" value="f">
+          <label for="female" style="color: palevioletred">female</label>
+          <input id="Male" type="radio" name="male" value="m">
+          <label for="male" style="color: royalblue">male</label>
+          <br>
+          <label for="selector">Select your City</label>
+          <select id="selector">
+            <option value="delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Haidrabad"> Haidrabad</option>
+            <option value="other"></option>
+          </select>
+          <br>
+          <label>Create your password</label>
+          <input id="create" type="password" placeholder="Enter your password" required="" minlength="6" maxlength="14">
+          <br>
+          <label>Confirm your password</label>
+          <input id="confirm" placeholder="Confirm your password" type="password" required="" minlength="6" maxlength="14">
+          <br>
+          <input id="Button" type="submit">
+          <input id="Button" type="reset">
+        </form>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

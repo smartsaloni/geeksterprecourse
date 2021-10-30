@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title style="text-align: center">Log In</title>
+    <style>
+      body
+       {
+        background-image: url("ASGNMNT3\ BACGROUND.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        color: goldenrod;
+      }
+      #box 
+      {
+        background:chartreuse;
+        color: black;
+        width: 400px;
+        height: 500px;
+        margin: 150px 0px 0px 500px;
+        padding-top: 40px;
+        box-shadow: 10px 10PX 20px yellowgreen;
+      }
+      input {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 20px;
+        height: 25px;
+        box-shadow: 8px 5px 4px rgb(111, 143, 201);
+        border: none;
+        text-align: center;
+      }
+      #box label {
+        font-weight: bold;
+        margin-top:50px;
+      }
+      #box h2 {
+        margin-left: 140px;
+        width: 100px;
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+      #button {
+        background-color: brown;
+        color: white;
+        border: black 4px solid;
+        box-shadow: 5px 5px 8px yellowgreen;
+        margin: 8px;
+      }
+      #button:hover {
+        background-color: darkgoldenrod;
+        color: cyan;
+        transform: translate(8px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <h2>Log In</h2>
+      <form>
+        <label type="name">Username</label>
+        <br />
+        <input
+          type="name"
+          placeholder="Username"
+          required
+          minlength="2"
+          pattern="A-Z"
+        />
+        <br />
+        <label type="Password">Password</label>
+        <br />
+        <input type="password" placeholder="Password" required minlength="6" />
+        <br />
+        <input id="button" type="submit" name="Log In" />
+        <input id="button" type="Reset" />
+        <br />
+        <h4>Create an account?</h4>
+        <a href="signup.html" target="_blank">Click here to register</a>
+      </form>
+    </div>
+  </body>
+</html>
